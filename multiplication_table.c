@@ -1,5 +1,12 @@
 #include <stdio.h>
+
+void mult(int);
 /* I didn't provide for i = 1 & for i = 0 (it's trivial) */
+int main()
+{
+    mult(5);    // and you can test what you want
+    return 0;
+}
 void mult(int i)
 {
     switch(i)
