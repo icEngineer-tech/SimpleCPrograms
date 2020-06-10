@@ -21,17 +21,14 @@ char* conct(const char* s, const char* s1)
 	*(res+i) = '\0';
 	return res;
 }
-void delete_char(char* dc)
-{
-	free(dc);
-}
+
 int main()
 {
 	const char* str = "hello";      // see, I'm using pointer to char because I allocated a new mem to an other string inside the function
 	const char* str2 = " world";
 	char* res = conct(str, str2);
 	printf("%s", res);
-	delete_char(res);
+	free(res);
 	/*char* rs = reverse(str);
 	printf("%s", rs);
 	delete_char(rs);*/
