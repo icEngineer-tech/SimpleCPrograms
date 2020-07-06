@@ -1,6 +1,6 @@
 #include <stdio.h>
 
-// this program will let you to verify whether your architecture is big or little endian
+// this program will let you verify whether your architecture is big or little endian
 
 
 int main()
