@@ -59,10 +59,7 @@ char* rmv(char s[])
     *(res+i)='\0';
     return res;
 }
-void deleter(char* s)   //you have to provide this otherwise memory leakage
-{
-    free(s);
-}
+
 //===================================================================================================
 
 
@@ -74,6 +71,6 @@ int main()
                                   redefiniton (an other info you've gained today :D) */
     char* result = rmv(s);      //if you're using the 3rd version you have to call deleter(result) after the printf()
     printf("%s",result);
-    //deleter(result); // only for 3rd version
+    free(result);
     return 0;
 }
